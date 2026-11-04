@@ -45,10 +45,13 @@ input, button, textarea, select {
 
 /*=============FONDO=============*/
 body {
-    background-color: black;
-    border-style: solid;
-    border-width: 5em;
+    background-color: #1a1a1a;
+    padding: 6em;
+    color:antiquewhite;
+    font-family: "Space Mono", monospace;
 }
+
+
 
 /*=============TIPO LETRA=============*/
 .space-mono-regular {
@@ -75,37 +78,28 @@ body {
   font-style: italic;
 }
 
-/*TÍTULO PRINCIPAL*/
-/*.titulo {
-    color: antiquewhite;
-    text-align: left;
-    font-size: 2em;
+.letra-marron {
+    color: brown;
 }
 
-.subtitulo {
-    color: antiquewhite;
-    text-align: left;
-    font-size: 1em;
-}*/
+.subrrallado {
+    font-style: italic;
+}
 
-
-
-/*TÍTULO PRINCIPAL*/
+/*========TÍTULO PRINCIPAL========*/
 .tabla-titulo {
     border-collapse: collapse;
 }
 
 .tabla-titulo td {
-    vertical-align: top;   /* el ">" se alinea con la primera línea */
+    vertical-align: top;
     padding: 0;
 }
 
 .titulo {
-    color: antiquewhite;
     text-align: left;
 }
 
-/* Mismo tamaño y mismo line-height para el ">" y el h1 */
 .titulo .flecha,
 .titulo h1 {
     font-size: 4em;
@@ -118,9 +112,106 @@ body {
     white-space: nowrap;
 }
 
+.flecha {
+    color: brown;
+}
+
 .subtitulo {
     font-size: 2em;
     line-height: 1.2;
     margin: 0;
     text-align: left;
+}
+
+.avatar {
+    width: 10em;
+    height: auto;
+}
+
+.separador-h1 td {
+    padding-bottom: 0.3em;
+}
+
+.separador-h2 td {
+    padding-bottom: 0.9em;
+}
+
+/*========ENLACE A PROYECTOS========*/
+.proyectos {
+    display: grid;
+    grid-template-columns: 1.4em repeat(3, minmax(0, 1fr));
+    column-gap: 3em;
+    align-items: start;
+}
+
+/*========ASIDE========*/
+.pie-pagina {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: black;
+    border-top: 5px solid brown;
+    padding: 1em 6em;
+}
+
+
+/*====PROYECTOS====*/
+.marco {
+    border: 5px solid brown;
+    background-color: black;
+    padding: 2em;          /* espacio interior */
+}
+
+.descripcion-proyecto h3 {
+    text-align: justify;
+}
+
+.separador-h3 {
+    padding-bottom: 2em;
+}
+
+.imagen-proyecto img {
+    width: 60%;
+    margin: 2em auto 0;
+}
+
+/*====SOBRE MÍ====*/
+html {
+    scroll-behavior: smooth;   /* desplazamiento suave al pulsar un ancla */
+}
+
+.indice ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em 3em;
+    font-size: 2em;
+}
+
+.indice a {
+    color: brown;
+    font-style: italic;
+}
+
+.indice a:hover,
+.volver-arriba a:hover {
+    text-decoration: underline;
+}
+
+.texto-sobre-mi p {
+    text-align: justify;
+    font-size: 1.5em;
+    line-height: 1.4;
+}
+
+.texto-sobre-mi p + p {
+    margin-top: 1em;
+}
+
+.volver-arriba {
+    margin-top: 1em;
+    text-align: right;
+    font-size: 1.5em;
+    color: brown;
 }
