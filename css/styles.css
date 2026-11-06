@@ -82,7 +82,7 @@ body {
     color: brown;
 }
 
-.subrrallado {
+.cursiva {
     font-style: italic;
 }
 
@@ -105,6 +105,11 @@ body {
     font-size: 4em;
     line-height: 1.2;
     margin: 0;
+}
+
+.titulo-secundario .flecha {
+    font-size: 2em;
+    line-height: 1.2;
 }
 
 .titulo .flecha {
@@ -213,5 +218,196 @@ html {
     margin-top: 1em;
     text-align: right;
     font-size: 1.5em;
+    color: brown;
+}
+
+/*====CURRÍCULUM====*/
+.tabla-scroll {
+    overflow-x: auto;   /* en pantallas pequeñas la tabla se desplaza sin romper la página */
+}
+
+.tabla-datos {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.5em;
+    line-height: 1.4;
+    text-align: left;
+}
+
+.tabla-datos th,
+.tabla-datos td {
+    padding: 0.6em 1em;
+    vertical-align: top;
+    border-bottom: 1px solid brown;
+}
+
+.tabla-datos th {
+    color: brown;
+    font-weight: 700;
+    border-bottom-width: 3px;
+}
+
+.tabla-datos tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.tabla-datos tbody tr:hover {
+    background-color: #1a1a1a;
+}
+
+/* El caption se oculta visualmente pero lo leen los lectores de pantalla */
+.solo-lectores {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+}
+
+.texto-descarga {
+    font-size: 1.5em;
+}
+
+.boton-descarga {
+    display: inline-block;
+    padding: 0.6em 1.2em;
+    border: 3px solid brown;
+    background-color: black;
+    color: brown;
+    font-weight: 700;
+}
+
+.boton-descarga:hover,
+.boton-descarga:focus-visible {
+    background-color: brown;
+    color: black;
+}
+
+/*====CONTACTO====*/
+
+.saltar-contenido {
+    position: absolute;
+    top: -100%;
+    left: 1em;
+    z-index: 200;
+    padding: 1em;
+    background-color: brown;
+    color: black;
+}
+
+.saltar-contenido:focus {
+    top: 1em;
+}
+
+.formulario-contacto {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+.formulario-contacto fieldset {
+    border: 2px solid brown;
+    padding: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.formulario-contacto legend {
+    color: brown;
+    padding: 0 0.5em;
+    font-weight: 700;
+}
+
+.campo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+.formulario-contacto input:not([type="radio"]):not([type="checkbox"]),
+.formulario-contacto select,
+.formulario-contacto textarea {
+    padding: 0.7em;
+    border: 2px solid brown;
+    background-color: #1a1a1a;
+    color: antiquewhite;
+}
+
+.formulario-contacto input:focus,
+.formulario-contacto select:focus,
+.formulario-contacto textarea:focus {
+    outline: 2px solid antiquewhite;
+}
+
+.formulario-contacto textarea {
+    resize: vertical;
+}
+
+.opciones-radio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.opciones-radio input,
+.campo-privacidad input {
+    accent-color: brown;
+}
+
+.campo-privacidad {
+    margin-bottom: 1em;
+}
+
+.acciones-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.acciones-formulario button {
+    padding: 0.7em 1.2em;
+    border: 3px solid brown;
+    background-color: black;
+    color: brown;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.acciones-formulario button:hover,
+.acciones-formulario button:focus-visible {
+    background-color: brown;
+    color: black;
+}
+
+.informacion-contacto {
+    font-size: 1.3em;
+    line-height: 1.5;
+}
+
+.informacion-contacto h3 {
+    color: brown;
+    margin-bottom: 1em;
+}
+
+.informacion-contacto li {
+    margin-top: 0.8em;
+}
+
+.informacion-contacto a {
+    color: brown;
+}
+
+.informacion-contacto a:hover {
+    text-decoration: underline;
+}
+
+.pie-contacto {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0;
+    border-top: 3px solid brown;
+}
+
+.pie-contacto a {
     color: brown;
 }

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto de Rubén Marqués.">
+    <title>Contacto | Rubén Marqués</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <a class="saltar-contenido" href="#contenido">Saltar al contenido</a>
+
+    <header id="inicio">
+
+        <table class="tabla-titulo">
+            <tr class="titulo space-mono-regular separador-h1">
+                <td class="flecha">&gt;</td>
+                <td><h1 class="subtitulo">nano <span class="letra-marron">/</span>contacto<span class="letra-marron">/</span>index.html</h1></td>
+            </tr>
+        </table>
+
+        <nav class="indice separador-h1" aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="sobre-mi.html">Sobre mí</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contacto.html" aria-current="page">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main id="contenido">
+
+        <section id="contacto" class="separador-h3">
+
+           <table class="tabla-titulo">
+                <tr class="titulo space-mono-regular titulo-secundario">
+                    <td class="flecha">&gt;</td>
+                    <td><h2 class="subtitulo">cat <span class="letra-marron">/</span>contacto<span class="letra-marron">/</span>informacion.txt</h2></td>
+                </tr>
+            </table>
+
+            <p class="introduccion-contacto">
+                Si quieres realizar una consulta, proponer una colaboración o contactar conmigo por cualquier otro motivo, puedes utilizar el siguiente formulario.
+            </p>
+
+            <form class="marco formulario-contacto" action="#" method="post">
+
+                <fieldset>
+                    <legend>Información personal</legend>
+
+                    <p class="campo-formulario">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                    </p>
+
+                    <p class="campo-formulario">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" autocomplete="email" required>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Motivo del contacto</legend>
+
+                    <p class="campo-formulario">
+                        <label for="motivo">¿Cuál es el motivo de tu mensaje?</label>
+                        <select id="motivo" name="motivo" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="consulta">Consulta</option>
+                            <option value="propuesta">Propuesta de colaboración</option>
+                            <option value="trabajo">Oportunidad laboral</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+
+                    <p class="campo-formulario">¿Cómo me has conocido?</p>
+
+                    <div class="opciones-radio">
+                        <label>
+                            <input type="radio" name="origen" value="github" required>
+                            GitHub
+                        </label>
+
+                        <label>
+                            <input type="radio" name="origen" value="portfolio">
+                            Portfolio
+                        </label>
+
+                        <label>
+                            <input type="radio" name="origen" value="redes">
+                            Redes sociales
+                        </label>
+
+                        <label>
+                            <input type="radio" name="origen" value="otro">
+                            Otro
+                        </label>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Mensaje</legend>
+
+                    <p class="campo-formulario">
+                        <label for="mensaje">Escribe tu mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="7" maxlength="1000" required></textarea>
+                        <small>Máximo 1000 caracteres.</small>
+                    </p>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Protección de datos</legend>
+
+                    <p class="campo-privacidad">
+                        <label for="privacidad">
+                            <input type="checkbox" id="privacidad" name="privacidad" required>
+                            He leído y acepto la política de privacidad.
+                        </label>
+                    </p>
+
+                </fieldset>
+
+                <div class="acciones-formulario">
+                    <button type="submit">Enviar mensaje</button>
+                    <button type="reset">Borrar formulario</button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <section id="contacto-alternativo" class="separador-h3">
+
+            <table class="tabla-titulo">
+                <tr class="titulo space-mono-regular separador-h1 titulo-secundario">
+                    <td class="flecha">&gt;</td>
+                    <td><h2 class="subtitulo">ls -la <span class="letra-marron">/</span>contacto<span class="letra-marron">/</span>alternativas</h2></td>
+                </tr>
+            </table>
+
+            <aside class="marco informacion-contacto">
+
+                <h3>Otras formas de contacto</h3>
+
+                <p>
+                    También puedes contactar conmigo directamente mediante correo electrónico o consultar mis proyectos en GitHub.
+                </p>
+
+                <ul>
+                    <li>
+                        Correo electrónico:
+                        <a href="mailto:TU_CORREO@ejemplo.com">TU_CORREO@ejemplo.com</a>
+                    </li>
+                    <li>
+                        GitHub:
+                        <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer">Mi perfil de GitHub</a>
+                    </li>
+                </ul>
+
+            </aside>
+
+        </section>
+
+        <p class="volver-arriba">
+            <a href="#inicio">↑ Volver al inicio</a>
+        </p>
+
+    </main>
+
+    <footer class="pie-contacto">
+        <p>© 2026 Rubén Marqués</p>
+        <a href="https://github.com/TU_USUARIO" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </footer>
+
+</body>
+</html>
